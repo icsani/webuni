@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: prod
+
+#FONTOS: a tenure-t csökkenő sorerndben kell megadni
+salary:
+  raise:
+    def:
+      percent: 5
+    smart:
+      - tenure: 10
+        percent: 10
+      - tenure: 5
+        percent: 5
+      - tenure: 2
+        percent: 2
